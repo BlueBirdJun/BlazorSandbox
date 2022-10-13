@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\knusSandbox.DataBase\knusSandbox.DataBase.csproj" />
+    <ProjectReference Include="..\knusSandbox.Nuget\knusSandbox.Nuget.csproj" />
+    <ProjectReference Include="..\KnusSandbox.Shared\KnusSandbox.Shared.csproj" />
+    <ProjectReference Include="..\knusSandbox\knusSandbox.csproj" />
+  </ItemGroup>
+
+</Project>
