@@ -1,16 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\knusSandbox.DataBase\knusSandbox.DataBase.csproj" />
-    <ProjectReference Include="..\knusSandbox.Nuget\knusSandbox.Nuget.csproj" />
-    <ProjectReference Include="..\KnusSandbox.Shared\KnusSandbox.Shared.csproj" />
-    <ProjectReference Include="..\knusSandbox\knusSandbox.csproj" />
-  </ItemGroup>
-
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>knusSand.Host</RootNamespace>
+		<AssemblyName>knusSand.Host</AssemblyName>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="6.0.5" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\KnusSandbox.Shared\KnusSandbox.Shared.csproj" />
+		<ProjectReference Include="..\knusSandbox\knusSandbox.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Update="appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
 </Project>

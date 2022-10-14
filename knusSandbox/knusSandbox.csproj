@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
+    <ImplicitUsings>enable</ImplicitUsings>  
+	<ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
+	<BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>	  
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +15,19 @@
 
   <ItemGroup>
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\knusSand.Infrastructure\knusSand.Infrastructure.csproj" />
+    <ProjectReference Include="..\knusSandbox.Common\knusSandbox.Common.csproj" />
+    <ProjectReference Include="..\knusSandbox.DataBase\knusSandbox.DataBase.csproj" />
+    <ProjectReference Include="..\knusSandbox.Nuget\knusSandbox.Nuget.csproj" />
+    <ProjectReference Include="..\KnusSandbox.Shared\KnusSandbox.Shared.csproj" />
   </ItemGroup>
 
 </Project>

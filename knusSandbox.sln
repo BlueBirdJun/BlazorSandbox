@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "knusSandbox", "knusSandbox\knusSandbox.csproj", "{3573F1AE-E31E-4E49-85CB-A4EE7C301EAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "knusSandbox", "knusSandbox\knusSandbox.csproj", "{3573F1AE-E31E-4E49-85CB-A4EE7C301EAD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Common", "1_Common", "{D9990474-802A-46B0-8B40-3D10DB260A05}"
 EndProject
@@ -11,17 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Application", "2_Applicat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Shared", "3_Shared", "{BDAF4886-8522-4F1B-87B0-C01DBB178B78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "knusSandbox.Common", "knusSandbox.Common\knusSandbox.Common.csproj", "{A357B3CC-9E2C-4FFD-881C-B202F9A4ACB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "knusSandbox.Common", "knusSandbox.Common\knusSandbox.Common.csproj", "{A357B3CC-9E2C-4FFD-881C-B202F9A4ACB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnusSandbox.Shared", "KnusSandbox.Shared\KnusSandbox.Shared.csproj", "{04F602AB-F6BC-4D09-985A-74C62D682900}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnusSandbox.Shared", "KnusSandbox.Shared\KnusSandbox.Shared.csproj", "{04F602AB-F6BC-4D09-985A-74C62D682900}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "knusSandbox.DataBase", "knusSandbox.DataBase\knusSandbox.DataBase.csproj", "{106795EE-4099-489F-B8D6-67E3AB230A37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "knusSandbox.DataBase", "knusSandbox.DataBase\knusSandbox.DataBase.csproj", "{106795EE-4099-489F-B8D6-67E3AB230A37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "knusSandbox.Nuget", "knusSandbox.Nuget\knusSandbox.Nuget.csproj", "{58F59FEC-548D-4CF2-99F7-8373C189F59B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "knusSandbox.Nuget", "knusSandbox.Nuget\knusSandbox.Nuget.csproj", "{58F59FEC-548D-4CF2-99F7-8373C189F59B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "knusSand.Infrastructure", "knusSand.Infrastructure\knusSand.Infrastructure.csproj", "{1B7C5551-A162-43CE-AAA7-E1F64819B554}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "knusSand.Infrastructure", "knusSand.Infrastructure\knusSand.Infrastructure.csproj", "{1B7C5551-A162-43CE-AAA7-E1F64819B554}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "knusSand.Host", "knusSand.Host\knusSand.Host.csproj", "{175FFFA4-04C2-4F50-8C36-DE1CBBC1060F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "knusSand.Host", "knusSand.Host\knusSand.Host.csproj", "{175FFFA4-04C2-4F50-8C36-DE1CBBC1060F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_Prensentation", "4_Prensentation", "{45B75844-25FB-451E-A8BC-27FB55F2CF69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,13 +64,13 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{3573F1AE-E31E-4E49-85CB-A4EE7C301EAD} = {1433A3B1-5B47-4693-8B4D-6FC5599C9ABE}
+		{3573F1AE-E31E-4E49-85CB-A4EE7C301EAD} = {45B75844-25FB-451E-A8BC-27FB55F2CF69}
 		{A357B3CC-9E2C-4FFD-881C-B202F9A4ACB8} = {D9990474-802A-46B0-8B40-3D10DB260A05}
 		{04F602AB-F6BC-4D09-985A-74C62D682900} = {BDAF4886-8522-4F1B-87B0-C01DBB178B78}
 		{106795EE-4099-489F-B8D6-67E3AB230A37} = {D9990474-802A-46B0-8B40-3D10DB260A05}
 		{58F59FEC-548D-4CF2-99F7-8373C189F59B} = {D9990474-802A-46B0-8B40-3D10DB260A05}
 		{1B7C5551-A162-43CE-AAA7-E1F64819B554} = {1433A3B1-5B47-4693-8B4D-6FC5599C9ABE}
-		{175FFFA4-04C2-4F50-8C36-DE1CBBC1060F} = {1433A3B1-5B47-4693-8B4D-6FC5599C9ABE}
+		{175FFFA4-04C2-4F50-8C36-DE1CBBC1060F} = {45B75844-25FB-451E-A8BC-27FB55F2CF69}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47BC7292-64F6-4736-8091-56188C2DE7C8}
