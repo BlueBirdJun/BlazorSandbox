@@ -20,9 +20,9 @@
         <Authorized>
             <NotificationConnection>
                 <MudLayout>
-                   @* <ThemeDrawer @bind-ThemeDrawerOpen="_themeDrawerOpen" ThemePreference="_themePreference"
+                    <ThemeDrawer @bind-ThemeDrawerOpen="_themeDrawerOpen" ThemePreference="_themePreference"
                         ThemePreferenceChanged="ThemePreferenceChanged" />
-                    <ThemeButton OnClick="@(() => _themeDrawerOpen = true)" />*@
+                    <ThemeButton OnClick="@(() => _themeDrawerOpen = true)" />
                     <MainLayout>
                         @Body
                     </MainLayout>
