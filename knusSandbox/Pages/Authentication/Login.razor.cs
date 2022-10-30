@@ -16,6 +16,9 @@ public partial class Login
     [Inject]
     public IAuthenticationService AuthService { get; set; } = default!;
 
+    [Inject]
+    public IConfiguration config { get; set; } = default!;
+
     private CustomValidation? _customValidation;
 
     public bool BusySubmitting { get; set; }
@@ -61,7 +64,10 @@ public partial class Login
     {
         _tokenRequest.Email = MultitenancyConstants.Root.EmailAddress;
         _tokenRequest.Password = MultitenancyConstants.DefaultPassword;
-        TenantId = MultitenancyConstants.Root.Id;
+
+        
+        TenantId = MultitenancyConstants.Root.Id;        
+        
     }
 
     private async Task SubmitAsync()
